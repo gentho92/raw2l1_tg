@@ -19,7 +19,7 @@ except ValueError:
     exit(1)
 
 # Configure logging
-log_dir = "/home/thomasfgklima/Dokumente/urbisphere/processing/ACTRIS_raw2l1/logs"
+log_dir = "/home/thomasfgklima/Dokumente/urbisphere/processing/ACTRIS_raw2l1_tg/logs"
 os.makedirs(log_dir, exist_ok=True)
 
 # Create unique log file names with timestamps
@@ -49,7 +49,7 @@ logger.addHandler(error_handler)
 
 # Define directories and script paths
 base_data_dir = "/home/thomasfgklima/Nextcloud/fgdata/obs/UCO/GRUN/ceilometer"
-output_dir = "/home/thomasfgklima/Dokumente/urbisphere/processing/STRATfinder/raw2l1_data/GRUN/"
+output_dir = "/home/thomasfgklima/Dokumente/urbisphere/processing/STRATfinder/input_raw2l1/GRUN"
 config_file = "/home/thomasfgklima/Dokumente/urbisphere/processing/ACTRIS_raw2l1_tg/raw2l1/conf/conf_lufft_chm15k_eprofile_GRUN.ini"
 python_executable = "python"
 raw2l1_script = "/home/thomasfgklima/Dokumente/urbisphere/processing/ACTRIS_raw2l1_tg/raw2l1/raw2l1.py"
